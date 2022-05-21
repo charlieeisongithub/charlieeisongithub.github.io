@@ -1,0 +1,113 @@
+* {
+  transition: 500ms ease;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: roboto light, sans-serif;
+  background: url(./images/White-Mountain-Fog-2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  width: 500px;
+  min-height: 500px;
+  padding: 2rem;
+  background-color: #191919;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+}
+.container:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(156, 156, 156, 0.689);
+  filter: blur(20px);
+  margin: -20px;
+}
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="email"] {
+  font-family: Roboto light;
+  border: 0;
+  background: #26272e;
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #424264;
+  border-radius: 10px;
+  padding: 15px 10px;
+  font-size: 20px;
+  width: 350px;
+  outline: none;
+  color: white;
+}
+.login {
+  color: rgb(95, 95, 95);
+  font-size: 50px;
+  font-family: roboto thin;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+.container input[type="text"]:hover,
+.container input[type="password"]:hover,
+.container input[type="email"]:hover {
+  border-color: #877eff;
+}
+.container input[type="text"]:focus,
+.container input[type="password"]:focus,
+.container input[type="email"]:focus {
+  width: 400px;
+  border-color: #877eff;
+}
+#login {
+  font-family: Roboto light;
+  border: 0;
+  background: #26272e;
+  display: block;
+  margin: 20px auto;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 50px;
+  font-size: 20px;
+  outline: none;
+  color: rgb(175, 175, 175);
+}
+#login:hover {
+  cursor: pointer;
+  font-size: 25px;
+  background-color: #424264;
+}
+.container input[type="text"]::placeholder,
+.container input[type="password"]::placeholder,
+.container input[type="email"]::placeholder {
+  color: rgb(175, 175, 175);
+}
+#error {
+  transition: 100ms;
+  color: black;
+  font-family: roboto;
+  font-size: 15px;
+}
+#usererror {
+  transition: 100ms;
+  color: black;
+  font-family: roboto;
+  font-size: 15px;
+}

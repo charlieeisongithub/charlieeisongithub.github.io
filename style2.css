@@ -1,0 +1,54 @@
+nav {
+  background-color: rgb(22, 22, 22);
+  height: 50px;
+  color: white;
+  font-family: roboto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+}
+.welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto", sans-serif;
+  font-size: 8vh;
+  color: rgb(211, 211, 211);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  background: url(./images/download\(1\).jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center;
+  font
+}
+.user {
+  transition: 100ms ease-in;
+  font-family: "Roboto";
+  font-size: 16vh;
+  color: white;
+  letter-spacing: 10px;
+}
+a {
+  color: white;
+  font-size: 1rem;
+  transition: 200ms; 
+  
+}
+a:hover {
+  color: rgb(113, 113, 231);
+  font-size: 1.3rem;
+}
